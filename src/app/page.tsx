@@ -169,6 +169,7 @@ export default function Page() {
               <a
                 href="https://drive.google.com/file/d/1mq-LYDcy6OTc-CW2bOl06x09tjOPMNvm/view?usp=sharing"
                 download="Mohit_Gour.pdf"
+                target="_blank"
                 className="inline-block bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-600 transition"
               >
                 Download Resume
