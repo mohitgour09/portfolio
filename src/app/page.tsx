@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { ShineBorder } from "@/components/magicui/shine-border";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -31,7 +32,8 @@ export default function Page() {
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
+              <Avatar className="size-40 border">
+                <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>

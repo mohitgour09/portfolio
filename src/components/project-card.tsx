@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { ShineBorder } from "./magicui/shine-border";
 
 interface Props {
   title: string;
@@ -46,6 +47,8 @@ export function ProjectCard({
         "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
       }
     >
+      <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
+
       <Link
         href={href || "#"}
         className={cn("block cursor-pointer", className)}
