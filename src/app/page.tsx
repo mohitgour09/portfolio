@@ -9,6 +9,7 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import { ShineBorder } from "@/components/magicui/shine-border";
+import { SparklesText } from "@/components/magicui/sparkles-text";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -125,7 +126,10 @@ export default function Page() {
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
+                <Badge key={skill}>
+                  {" "}
+                  <SparklesText text={skill} />
+                </Badge>
               </BlurFade>
             ))}
           </div>

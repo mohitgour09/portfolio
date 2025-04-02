@@ -87,7 +87,7 @@ export const DATA = {
       title: "Software Engineer",
       logoUrl: "/microtechnologies.jpg",
       start: "Feb 2023",
-      end: "Dec 2024",
+      end: "Present",
       description:
         "At MicroTechnologies, I played a key role in designing class diagrams and Figma prototypes to ensure project alignment with client requirements. I developed full-stack web applications using React.js, Node.js, Express.js, PostgreSQL, and MySQL, focusing on creating intuitive user interfaces and seamless interactions. To enhance performance and scalability, I optimized database schemas and backend architecture while integrating and documenting RESTful APIs using Swagger & Postman for improved frontend-backend communication. Additionally, I implemented CI/CD pipelines with GitHub Actions & AWS EC2, streamlining deployment processes and fostering better collaboration through Git/GitHub.",
     },
