@@ -1,4 +1,3 @@
-import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -9,7 +8,6 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import { ShineBorder } from "@/components/magicui/shine-border";
-import { SparklesText } from "@/components/magicui/sparkles-text";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -126,9 +124,7 @@ export default function Page() {
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
-              </BlurFade>
+                <Badge>{skill}</Badge>
               </BlurFade>
             ))}
           </div>
@@ -157,6 +153,26 @@ export default function Page() {
           ))}
         </div>
       </section>
+      <section id="certifications">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <h2 className="text-xl font-bold">Certifications</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-2">
+            {DATA.certifications.map((cert, id) => (
+              <BlurFade
+                key={cert.title}
+                delay={BLUR_FADE_DELAY * 14 + id * 0.05}
+              >
+                <Badge variant="secondary" className="px-3 py-1 text-xs">
+                  {cert.title}
+                  {cert.issuer ? ` — ${cert.issuer}` : ""}
+                </Badge>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
@@ -172,9 +188,8 @@ export default function Page() {
                 Click the button below to download my resume.
               </p>
               <a
-                href="https://drive.google.com/file/d/1mq-LYDcy6OTc-CW2bOl06x09tjOPMNvm/view?usp=sharing"
-                download="Mohit_Gour.pdf"
-                target="_blank"
+                href="/resume.pdf"
+                download="Mohit_Gour_Resume.pdf"
                 className="inline-block bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-600 transition"
               >
                 Download Resume

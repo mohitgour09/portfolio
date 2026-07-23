@@ -1,5 +1,5 @@
 {
-  "name": "porfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -47,8 +47,7 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   },
-  "description": "<div align=\"center\"> <img alt=\"Portfolio\" src=\"https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455\" width=\"90%\"> </div>",
+  "description": "Personal portfolio website of Mohit Gour, built with Next.js.",
   "main": "index.js",
-  "author": "",
-  "license": "ISC"
+  "author": "Mohit Gour"
 }
