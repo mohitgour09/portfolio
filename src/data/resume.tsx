@@ -6,9 +6,9 @@ export const DATA = {
   initials: "MG",
   url: "https://portfolio-git-main-mohit-gours-projects.vercel.app",
   description:
-    "Full-Stack Engineer specializing in React/Next.js frontend integration, Node.js backends, and Generative AI (RAG) systems.",
+    "Full-Stack Engineer building scalable web applications and AI-powered products.",
   summary:
-    "Full Stack Engineer with around 3 years of experience building and shipping web applications using React, Next.js, Node.js, Express.js, PostgreSQL, and MongoDB. Strong in the integration layer of frontend development — architecting state management (Zustand, React Query), wiring APIs into functional React components, and building the data flow logic that connects UI to backend services. Experienced in Generative AI integrations, RAG-based systems, payment platforms, authentication workflows, and cloud deployments on AWS. Comfortable working across the stack with a focus on clean, maintainable, production-ready code.",
+    "Hi, I'm Mohit 👋 I'm a Full-Stack Engineer with 3 years of experience building modern web applications using React, Next.js, Node.js, Express.js, PostgreSQL, and MongoDB. I specialize in developing production-ready SaaS products, integrating Generative AI and RAG systems, implementing secure payment workflows, and deploying scalable cloud solutions on AWS. I enjoy turning complex ideas into fast, reliable, and user-friendly products.",
   avatarUrl: "/me.png",
   skills: [
     "JavaScript",
